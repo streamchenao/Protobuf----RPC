@@ -1,0 +1,17 @@
+// protobuf的版本
+syntax = "proto3"; 
+
+// 添加该标识，让protoc产生service服务类和服务方法
+option cc_generic_services = true; 
+//option py_generic_services = true;  
+//option java_generic_services = true;  
+
+
+// 1. 定义数据打包类型
+message MessageInfo{
+	string service_name = 1;
+	string method_name = 2;
+}
+// 规定RPC框架和客户端之间发送数据的格式
+// header的前四个字节是Userservice和ServiceMethod的大小
+// 剩余的是ServiceMethod被序列化的参数

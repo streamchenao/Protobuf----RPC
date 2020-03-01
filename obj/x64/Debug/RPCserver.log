@@ -1,0 +1,46 @@
+﻿  正在清理远程项目目录
+  正在验证源
+  正在将源远程复制到“192.168.0.105”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+  loadxmlcoofig.cpp
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\loadxmlcoofig.cpp(45,19): warning : conversion to ‘short unsigned int’ from ‘int’ may alter its value [-Wconversion]
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\loadxmlcoofig.cpp(45,19): warning :     _RpcPort = atoi(node_cnf->ToElement()->GetText());
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\loadxmlcoofig.cpp(45,19): warning :                ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  rpcclient.cpp
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcclient.cpp(30,7): warning : unused variable ‘errcode’ [-Wunused-variable]
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcclient.cpp(30,7): warning :    int errcode = 2;
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcclient.cpp(30,7): warning :        ^~~~~~~
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcclient.cpp(44,43): warning : conversion to ‘int’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcclient.cpp(44,43): warning :   int request_body_size = request_body.size();
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcclient.cpp(44,43): warning :                           ~~~~~~~~~~~~~~~~~^~
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcclient.cpp(68,23): warning : conversion to ‘int’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcclient.cpp(70,28): warning : conversion to ‘short unsigned int’ from ‘int’ may alter its value [-Wconversion]
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcclient.cpp(70,28): warning :   unsigned short port = atoi(host.substr(index + 1).c_str());
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcclient.cpp(70,28): warning :                         ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  rpcserver.cpp
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcserver.cpp(71,88): warning : conversion to ‘int’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcserver.cpp(71,88): warning :    _zkclient.create(method_path.c_str(), server_.ipPort().c_str(), server_.ipPort().size(), ZOO_EPHEMERAL);
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\rpcserver.cpp(71,88): warning :                                                                    ~~~~~~~~~~~~~~~~~~~~~^~
+  rpcserver.pb.cc
+  service.pb.cc
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\service.pb.cc(687,64): warning : conversion to ‘google::protobuf::int32 {aka int}’ from ‘google::protobuf::uint64 {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\service.pb.cc(712,65): warning : conversion to ‘google::protobuf::int32 {aka int}’ from ‘google::protobuf::uint64 {aka long unsigned int}’ may alter its value [-Wconversion]
+  testRpcClient.cpp
+  testRpcServer.cpp
+  zookeeperutil.cpp
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\zookeeperutil.cpp(112,29): warning : conversion to ‘int’ from ‘double’ may alter its value [-Wfloat-conversion]
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\zookeeperutil.cpp(112,29): warning :     int time = timeout * 1.0 / 3;
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\zookeeperutil.cpp(112,29): warning :                ~~~~~~~~~~~~~~^~~
+  正在链接对象
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Application Type\Linux\1.0\Linux.targets(435,5): error : /home/chen/projects/RPCserver/我的代码/RPC分布式�络通信/RPCtest/RPCserver/obj/x64/Debug/testRpcServer.o：在函数‘main’�：
+/usr/local/include/google/protobuf/arenastring.h(376): error : `main'被多次定义
+E:\我的代码\RPC分布式网络通信\RPCtest\RPCserver\obj\x64\Debug\testRpcClient.o : error : /home/chen/projects/RPCserver/我的代码/RPC分布式网络通信/RPCtest/RPCserver/testRpcClient.cpp:7：第一次在此定义
+/usr/bin/ld : error : 找不到 -lmysqlclient
+collect2 : error : ld returned 1 exit status
